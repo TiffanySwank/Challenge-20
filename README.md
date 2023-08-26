@@ -9,6 +9,18 @@ I WANT to view a potential employee's deployed React portfolio of work samples
 SO THAT I can assess whether they're a good candidate for an open position
 
 ### Acceptance Criteria
+GIVEN a single-page application portfolio for a web developer
+Portfolio home page:
+Header:
+developer's name
+navigation with titles: About Me (selected by default), Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+a section for content
+and a footer: text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+ABOUT ME page (home page): a recent photo or avatar of the developer and a short bio about them
+PORTFOLIO page: titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
+CONTACT page: contact form with fields for a name, an email address, and a message; all fields have “required” attribute and messages to user when not filled in; email field is validated;
+RESUME page: a link to a downloadable resume (pdf, doc) and a list of the developer’s proficiencies
+Navigation clicking: title with the corresponding section below the navigation without the page reloading and that title is highlighted
 
 GIVEN a single-page application portfolio for a web developer
 WHEN I load the portfolio
