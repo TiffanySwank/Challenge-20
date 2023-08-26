@@ -1,88 +1,130 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Developer Portfolio</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
     <header>
-      <h1>Developer Portfolio</h1>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#work">Portfolio</a>
-        <a href="#contact">Contact Me</a>
-        <a href="#resume">Resume</a>
-      </nav>
+        <h1>Tiffany Swank</h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="subtitle">
-      <a href="subtitle"></a>
-      <div>Cool Subtitle Here</DIV>
-    </section class="subtitle">
-    <div class="About">
-      <div class="card">
+
+    <section id="about">
         <h2>About Me</h2>
-    </div>
-    <div>
-        <div class="pt">
-        <h3>Hi I am Tiffany! </h3>
-        <img src="your-image.jpg" alt="avatar.jpg">
-    </div>
-    <div>
-      <div class="card2">
+        <img src="avatar.jpg" alt="Developer's Avatar">
+        <p>Hi my name is Tiffany!</p>
+    </section>
+
+    <section id="portfolio">
         <h2>Portfolio</h2>
-    </div>
-        <div>
-            <div class="container">
-                <div class="large-box">
-                    <div class="small-box">
-                        <h4>Slack</h4>
-                        <h5>MERN Stack</h5>
-                    </div>
-                </div>
-            </div>
-                <div class="container">
-                    <div class="large-box1">
-                        <div class="small-box1">
-                            <h4>VS Code</h4>
-                            <h5>Node/loT</h5>
-                        </div>
-                  </div>
-                    <div class="large-box2">
-                        <div class="small-box2">
-                            <h4>Calculator</h4>
-                            <h5>React/JavaScript/CSS</h5>
-                        </div>
-                  </div>
-                </div>
-                <div class="container">
-                    <div class="large-box3">
-                        <div class="small-box3">
-                            <h4>GitLab</h4>
-                            <h5>MERN Stack</h5>
-                        </div>
-                    </div>
+        <div class="project">
+          <h3>Advanced CSS</h3>
+          <a href="https://github.com/TiffanySwank/Challenge-2-css">GitHub repository</a>     
+          <a href="deployed-github">Deployed websitet here</a> 
+        </div>    
+        <div class="project">
+          <img src="project1.jpg" alt="Project 1">
+      </div>
 
-                    <div class="large-box4">
-                    <div class="small-box4">
-                      <h4>GitHub</h4>
-                      <h5>HTML/CSS</h5>
-                     </div>
-                </div>
+        <div class="project">
+          <h3>Employee Tracker</h3>
+          <a href="https://github.com/TiffanySwank/Challenge-12-employee-tracker-">GitHub repository</a>     
+          <a href="deployed-github">Deployed websitet here</a> 
+        </div>   
+        <div class="project">
+          <img src="project2.jpg" alt="Project 2">
+      </div>
 
+        <div class="project">
+          <h3>Book Search</h3>
+          <a href="https://github.com/TiffanySwank/Challenge-21-book-serach">GitHub repository</a>     
+          <a href="deployed-github">Deployed websitet here</a> 
+        </div>   
+        <div class="project">
+          <img src="project3.jpg" alt="Project 3">
+      </div>
+    
+        <div class="project">
+          <h3>Logo Maker</h3>
+          <a href="https://github.com/TiffanySwank/Challenge-10-logo-maker-">GitHub repository</a>     
+          <a href="deployed-github">Deployed websitet here</a> 
+        </div>  
+        <div class="project">
+          <img src="project4.jpg" alt="Project 4">
+      </div>
+
+        <div class="project">
+          <h3>Note Taker</h3>
+          <a href="phttps://github.com/TiffanySwank/Challenge-11-note-taker-">GitHub repository</a>     
+          <a href="deployed-github">Deployed websitet here</a> 
+        </div>   
+        <div class="project">
+          <img src="project5.jpg" alt="Project 5">
+      </div>
+
+        <div class="project">
+          <h3>E-Commerce</h3>
+          <a href="https://github.com/TiffanySwank/Challenge-13-e-commerce">GitHub repository</a>     
+          <a href="deployed-github">Deployed websitet here</a> 
+        </div>   
+        <div class="project">
+            <img src="project6.jpg" alt="Project 6">
         </div>
-   <div>
-        <div class="card3">
-        <h2>Contact me</h2>
-    </div>
-    <div>
-        <div class="pt3">
-        <h3>000-000-0000 sample@gmail.com feel free to contact me by phone or email!</h3>
 
-    </div>
+
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact me directly at TiffanySwank@gmail.com or 000-000-0000</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download Resume</a>
+        <!-- List of proficiencies -->
+        <ul>
+           <h3> Skills </h3>
+            <h4> Coding</h4>
+           <li>Full-stack Certificate</li>
+           <h4> Technologies</h4>
+           <li>Handlebars</li>
+           <li>Mongo</li>
+           <h4> Teaching</h4>
+           <li>TESL Certificate </li>
+            <h4> Project Management</h4>
+            <li>PMP Certificate</li>
+        </ul>
+    </section>
+
     <footer>
+        <a href="https://TiffanySwankgithub.com" target="_blank">GitHub</a>
+        <a href="https://TiffanySwanklinkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://TiffanySwanktwitter.com" target="_blank">Twitter</a>
     </footer>
-  </body>
+
+    <script src="script.js"></script> 
+</body>
 </html>
